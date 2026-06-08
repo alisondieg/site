@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Desafio 01 formulario</h1>
+
+    <section id="formulario">
+        <h2>Formulário</h2>
+
+        <form action="" id="formulario">
+
+            <label for="nome">Nome completo: </label> <br>
+            <input type="text" id="nome" name="nome" required> <br> <br>
+
+            <label for="nome">Email: </label> <br>
+            <input type="email" id="email" name="email" required> <br> <br>
+
+            <label for="idade">Sua idade:</label>
+            <input type="number" id="idade" name="idade" min="18" max="120" placeholder="Ex: 25"> <br>
+
+
+
+            <label for="materia">Para qual matéria você está se candidatando para lecionar?</label>
+            <br>
+
+            <form id="materias">
+                <label>
+                    <input type="radio" name="materia" value="matematica"> Matemática
+                </label> <br>
+
+                <label>
+                    <input type="radio" name="materia" value="portugues"> Português
+                </label> <br>
+
+                <label>
+                    <input type="radio" name="materia" value="biologia"> Biologia
+                </label> <br>
+
+                <label>
+                    <input type="radio" name="materia" value="ciencias"> Ciências
+                </label> <br>
+
+                <label>
+                    <input type="radio" name="materia" value="historia"> História
+                </label> <br>
+
+                <label>
+                    <input type="radio" name="materia" value="geografia"> Geografia
+                </label> <br>
+
+                <label>
+                    <input type="radio" name="materia" value="artes"> Artes
+                </label> <br>
+            </form>
+
+
+
+            <br> <label for="escolaridade">Nível de escolaridade: </label> <br>
+            <select name="escolaridade" id="materia">
+                <option value="superiorComplero">Superior completo</option>
+                <option value="cursandoMestrado">Cursando mestrado</option>
+                <option value="mestradoCompleto">Mestrado completo</option>
+                <option value="cursandoDoutorado">Cursando doutorado</option>
+                <option value="doutoradoCompleto">Doutoreado completo</option>
+            </select> <br> <br>
+
+            <label for="mensagem">Mensagem: </label> <br>
+            <textarea name="mensagem" id="mensagem" maxlength="200" rows="5"></textarea> <br>
+
+
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+</body>
+
+</html>
